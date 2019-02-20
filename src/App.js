@@ -6,13 +6,13 @@ import './config/reactotron';
 
 import store from './store';
 
-import TodoList from './TodoList';
+import Routes from './routes';
 
 const App = () => (
   <div className="App">
     {/* O provider passa a todos os componentes dentro dele a informacao sobre o estado do redux usando a api de contexto do REACT */}
     <Provider store={store}>
-      <TodoList />
+      <Routes />
     </Provider>
   </div>
 );
